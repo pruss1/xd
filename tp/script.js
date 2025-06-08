@@ -6,24 +6,28 @@ function buscar(){
   if(!termino){
     alert("escribi xd")
   }
-  else if(termino=="lio") {
+  else if(termino=="borgie") {
     explosion.style.display="block"
     setTimeout(()=>{
       explosion.style.display="none"
       var r={
-        nombre:"lio",
-        imagen:"lio.jpg",
-        descripcion:"omg encontraste el easter egg de lio, sos un verdadero conocedor de ranas",
-        reino:"bob",
-        filo:"epic",
-        clase:"4 15",
-        orden:"ferg"
+        nombre:"borgie",
+        video:"borgie.mp4",
+        descripcion:"omg encontraste el easter egg de borgie, sos un verdadero conocedor de ranas",
+        reino:"Animalia",
+        filo:"Chordata",
+        clase:"Amphibia",
+        orden:"Anura",
+        familia:"Pyxicephalidae",
+        genero:"Pyxicephalus",
+        ig:"https://www.instagram.com/mamjammarley/"
       }
       var c=document.createElement("div")
       c.className="card m-2"
       c.style.width="480px"
       c.innerHTML=
-        `<img src="${r.imagen}" class="card-img-top">
+        `<video class="card-img-top" controls autoplay loop>
+         <source src="${r.video}" type="video/mp4"></video>
         <div class="card-body">
           <h5 class="card-title">${r.nombre}</h5>
           <p class="card-text">
@@ -31,10 +35,17 @@ function buscar(){
             Filo:${r.filo}<br>
             Clase:${r.clase}<br>
             Orden:${r.orden}<br>
+            Familia:${r.familia}<br>
+            Genero:${r.genero}<br>
             Descripción:${r.descripcion}
+            Instagram:${r.ig}
           </p>
         </div>`
       resultados.appendChild(c)
+      L.marker([-24.654, 25.908]).addTo(m)
+        .bindPopup(`<p>borgie (Pyxicephalus adspersus)</p><br><video width="150" autoplay loop muted><source src="${r.video}" type="video/mp4"></video>`)
+        .openPopup();
+        m.setView([-24.654, 25.908], 10);
     },800)
   } 
   else{
@@ -81,7 +92,7 @@ function buscar(){
                           Filo:${especie.phylum||"No se"}<br>
                           Clase:${especie.class||"No se"}<br>
                           Orden:${especie.order||"No se"}<br>
-                          Genero:${especie.genus|| "No se"}<br>
+                          Genero:${especie.genus||"No se"}<br>
                           Familia:${especie.family||"No se"}
                         </p>
                       </div>`
