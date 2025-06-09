@@ -47,3 +47,6 @@ h2 {
   height: 500px;
   margin: auto;
 }
+.espacios{
+  display: flex;
+}
