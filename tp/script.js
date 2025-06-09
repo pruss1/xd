@@ -27,7 +27,7 @@ function buscar(){
       c.style.width="480px"
       c.innerHTML=
         `<video class="card-img-top" controls autoplay loop>
-         <source src="${r.video}" type="video/mp4"></video>
+        <source src="${r.video}" type="video/mp4"></video>
         <div class="card-body">
           <h5 class="card-title">${r.nombre}</h5>
           <p class="card-text">
@@ -108,10 +108,6 @@ function buscar(){
               resultados.innerHTML="<h1>Error</h1>"
               mapa.style.display="none"
             });
-        })
-        .catch(()=> {
-          resultados.innerHTML="<h1>Error</h1>"
-          mapa.style.display="none"
         })
     },800)
   }
