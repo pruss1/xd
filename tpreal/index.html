@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FrogSearch</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <audio id="explosionSound" src="https://www.soundjay.com/mechanical/sounds/explosion-01.mp3" preload="auto"></audio>
+  <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid d-flex justify-content-center align-items-center">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="images.png" alt="Logo" width="100" height="70" class="d-inline-block">
+      <h1>FrogSearch</h1>
+    </a>
+  </div>
+</nav>
+  <button onclick="location.href='///C:/Users/A-12/Desktop/xd-main/tp/index1.html'"
+    style="position: absolute;height: 115%;">
+    <img src="ranita.jpg" style="width: 120px; height: 100%;" />
+  </button>
+  <div class="b">
+    <input type="text" id="buscador" placeholder="Buscá una rana"/>
+    <button onclick="buscar()">🔍</button>
+  </div>
+  <div class="d-flex justify-content-center">
+  <button onclick="descubrir()" class="btn mt-2" style="background-color: #5b945e; color: white; border: none;">Descubrí una rana random</button>
+</div>
+<div id="lol">
+<div id="ranaCarousel" class="carousel slide mt-4 mb-4" data-bs-ride="carousel" style="max-width: 600px; margin: auto;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#ranaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#ranaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#ranaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner rounded shadow">
+    <div class="carousel-item active">
+      <img src="ffefaf.png" class="d-block w-100" alt="Breviceps adspersus">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+        <h5>Breviceps adspersus</h5>
+        <p>Conocida como "rana globo". Su forma regordeta la hace icónica en internet.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Captura de pantalla 2025-06-17 200223fffffff.png" class="d-block w-100" alt="Phyxicephalus adspersus">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+        <h5>Phyxicephalus adspersus</h5>
+        <p>También conocida como la rana toro africana. Grande, territorial y sorprendente.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Captura de pantalla 2025-06-17 195704.png" class="d-block w-100" alt="Lepidobatrachus laevis">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+        <h5>Lepidobatrachus laevis</h5>
+        <p>Conocida por el meme de "It's wednesday my dudes". Muy popular en terrarios.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#ranaCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#ranaCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+</div>
+  <div id="explosion" style="display: none; text-align: center;">
+    <img src="https://cdn.pixabay.com/animation/2024/05/23/07/51/07-51-08-820_512.gif" width="800" />
+  </div>
+  <div class="xd">
+  <div id="resultados" ></div>
+  <div id="mapa" style="height: 500px; width: 500px;"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

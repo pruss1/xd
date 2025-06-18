@@ -1,0 +1,87 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("fondo-degradado-tonos-verdes_23-2148373477.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+  filter: blur(2px);
+  opacity: 0.8;
+}
+body {
+  cursor: url('icons8-frog-24.png'), auto;
+}
+h1 {
+  text-align: center;
+  color: rgb(49, 49, 49) !important;
+  font-style: italic;
+  font-family: 'Share Tech', sans-serif;
+}
+h2 {
+  text-align: center;
+  color: white !important;
+  font-style: italic;
+  font-family: 'Share Tech', sans-serif;
+}
+.b {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.b input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+.b button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #5b945e;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  
+}
+
+.xd {
+  display: none; 
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 140px; 
+}
+#resultados {
+  display: flex;
+  width: 500px;
+  min-height: 500px;
+  overflow-y: auto;  
+  border-radius: 12px;
+  padding: 10px;
+}
+
+#mapa {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+}
+.card {
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;    
+  height: auto;     
+  object-fit: contain; 
+  border-radius: 12px 12px 0 0;
+}
+
