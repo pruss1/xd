@@ -15,9 +15,9 @@ function buscar() {
       explosion.style.display = "none";
 
       var r = {
-        nombre: "borgie",
+        nombre: "Borgie",
         video: "borgie.mp4",
-        descripcion: "omg encontraste el easter egg de borgie, sos un verdadero conocedor de ranas",
+        descripcion: "OMG, encontraste el easter egg de Borgie, sos un verdadero conocedor de ranas",
         reino: "Animalia",
         filo: "Chordata",
         clase: "Amphibia",
